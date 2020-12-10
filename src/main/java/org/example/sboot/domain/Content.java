@@ -1,10 +1,12 @@
 package org.example.sboot.domain;
 
+import io.ebean.annotation.ChangeLog;
 import org.example.sboot.domain.finder.ContentFinder;
 import javax.persistence.Entity;
 import javax.persistence.Table;
 
 @Entity
+@ChangeLog
 @Table(name="exa_content")
 public class Content extends BaseModel {
 
